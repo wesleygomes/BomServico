@@ -1,9 +1,13 @@
 package br.net.bomservico.beans;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
-public class Usuario {
+public class Usuario implements Serializable{
 
+	private static final long serialVersionUID = 4274087544556154310L;
+
+	
 	int idusuario;
 	String nome, sobrenome, email, sexo, login, senha, foto;
 	int cpf, celular, telefone_fixo;
